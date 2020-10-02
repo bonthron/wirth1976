@@ -22,5 +22,6 @@ Because there are two termination conditions, Wirth uses the "sentinel technique
 
 The recursive versions increase memory consumption from O(1) to O(N) 
 
-
+Inside the box! The **Modern Fisher Yates Shuffle** included (to give me something to sort), also one of my favorite algorithms. 
+The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates in their book Statistical tables for biological, agricultural and medical research. The modern version of the Fisher-Yates shuffle, designed for computer use, was introduced by Richard Durstenfeld in 1964 and popularized by Donald E. Knuth in The Art of Computer Programming.  O(n)
 
