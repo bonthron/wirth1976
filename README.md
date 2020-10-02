@@ -9,9 +9,9 @@ I'm re-working the algorithms in JavaScript, Python, Scheme, and the original Pa
 ### Insertion Sort
 This method is widely used by card players. It is a stable sort, it leaves the order of items with equal keys unchanged.
 
-The number of key comparisons in the i-th sift is at most i - 1, at least 1, and -assumuing that all permutations of the n keys are equally probable- 1/2 in average.
-C_min = n - 1
-C_max = 1/2(n^2 + n) -1
+The number of key comparisons in the i-th sift is at most i - 1, at least 1, and -assumuing that all permutations of the n keys are equally probable- 1/2 in average. \
+C_min = n - 1 \
+C_max = 1/2(n^2 + n) -1 \
 
 The least numbers occur if the items are originally in order; the worst case occurs if the items are originally in reverse order.
 
