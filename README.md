@@ -1,11 +1,12 @@
 # wirth
 ## Niklaus Wirth's Algorithms + Data Structures 1976
 
-Revisiting Niklaus Wirth's classic book. 45 years later it remains relevant. 
-The book is written with Pascal. Amazingly, the code still compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
+Revisiting Niklaus Wirth's classic book. \
+45 years later- it remains highly relevant. \
+The code examples are Pascal. Amazingly, the code still compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
 
-I'm re-working the algorithms in JavaScript, Python, Scheme, in addition to the original Pascal.\
-Learning Pascal is fun! 
+In addition to the original Pascal, I'm re-working the algorithms in JavaScript, Python, and Scheme. \
+Learning Pascal is fun! I recommend it.
 
 ![cover](wirth1.jpg?raw=true)
 
