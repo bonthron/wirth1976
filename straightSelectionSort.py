@@ -24,49 +24,26 @@ def fisher_yates_shuffle(l):
     return lst
 
 
-# --------------------------------------------------------------------------- insert_recursive
-def insert_recursive(lst, x):
-
-    if len(lst) == 0:
-        return [x]
-    else:
-       car = lst[0]
-       cdr = lst[1:]       
-       if(x.key <= car.key):
-           return [x] + lst
-       else:
-           return [car] + insert_recursive(cdr, x)
-
-
-# --------------------------------------------------------------------------- insertion_sort_recursive
-def insertion_sort_recursive(lst):
-
-    if len(lst) == 0:
-        return []
-    else:
-        car = lst[0]
-        cdr = lst[1:]
-        return insert_recursive(insertion_sort_recursive(cdr), car)
-
-
-
-# --------------------------------------------------------------------------- insertion_sort
-#  stable sort
+# --------------------------------------------------------------------------- selection_sort
+#  not a stable sort
 #  O(n2)
 
-def insertion_sort(l):
+def selection_sort(l):
 
     lst = l.copy()
-    for i in range(len(lst)):
+    n = len(lst)
 
+    for i in range(n):
         x = lst[i]
-        j = (i - 1)
+        k = i
+        for j in range((i+1), n):
 
-        while((j >= 0) and (lst[j].key > x.key)):
-            lst[j + 1] = lst[j]
-            j -= 1
-
-        lst[j + 1] = x
+            if(lst[j].key < x.key):
+                x = lst[j]
+                k = j
+                
+        lst[k] = lst[i]
+        lst[i] = x
         
     return lst
 
@@ -96,5 +73,5 @@ lst = [ Rec(1,"A"),
 shuf_lst =  fisher_yates_shuffle(lst)
 for x in shuf_lst: print(x)
 
-sort_lst = insertion_sort(shuf_lst)
+sort_lst = selection_sort(shuf_lst)
 for x in sort_lst: print(x)
