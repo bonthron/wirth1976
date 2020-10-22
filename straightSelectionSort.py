@@ -24,6 +24,47 @@ def fisher_yates_shuffle(l):
     return lst
 
 
+# --------------------------------------------------------------------------- swap_list_items
+def swap_list_items(lst, i, j):
+
+    l = lst.copy()
+    a = l[i]
+    b = l[j]
+    l[i] = b    
+    l[j] = a
+    return l
+
+    
+# --------------------------------------------------------------------------- smallest_index
+def smallest_index(lst, start_at):
+
+    def inner(x, l, i, j):
+        if not l:
+            return i
+        else:
+            cdr = l[1:]
+            if ((j > i) and (l[0].key < x.key)):
+                return inner(l[0], cdr, j, (j + 1))
+            else:
+                return inner(x, cdr, i, (j + 1))
+                
+    return inner(lst[start_at], lst, start_at, 0)
+
+    
+# --------------------------------------------------------------------------- selection_sort_recursive
+def selection_sort_recursive(lst):
+
+    def inner(l, i):
+        if i == (len(l) - 1):
+            return l
+        else:
+            s = smallest_index(l, i)
+            return inner(swap_list_items(l, i, s), (i + 1))
+        
+    return inner(lst.copy(), 0)
+    
+
+
 # --------------------------------------------------------------------------- selection_sort
 #  not a stable sort
 #  O(n2)
@@ -72,6 +113,9 @@ lst = [ Rec(1,"A"),
 
 shuf_lst =  fisher_yates_shuffle(lst)
 for x in shuf_lst: print(x)
+
+#sort_lst = selection_sort_recursive(shuf_lst)
+#for x in sort_lst: print(x)
 
 sort_lst = selection_sort(shuf_lst)
 for x in sort_lst: print(x)

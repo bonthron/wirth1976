@@ -96,5 +96,8 @@ lst = [ Rec(1,"A"),
 shuf_lst =  fisher_yates_shuffle(lst)
 for x in shuf_lst: print(x)
 
+#sort_lst = insertion_sort_recursive(shuf_lst)
+#for x in sort_lst: print(x)
+
 sort_lst = insertion_sort(shuf_lst)
 for x in sort_lst: print(x)
