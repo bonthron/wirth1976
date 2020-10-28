@@ -3,7 +3,7 @@
 
 Revisiting Niklaus Wirth's classic book. \
 45 years later- it remains highly relevant. \
-The code examples are Pascal. Amazingly, the code still compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
+The code examples are Pascal. Amazingly, the code compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
 
 In addition to the original Pascal, I'm re-working the algorithms in JavaScript, Python, and Scheme. \
 Learning Pascal is fun! I recommend it.
