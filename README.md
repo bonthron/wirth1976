@@ -50,6 +50,8 @@ If we view the array to be in a vertical instead of a horizontal position, and t
 
 **Exchange sort is inferior to both straight insertion and straight selection; in fact, the bubblesort has hardly anything to recommend it except its catchy name!**
 
+Unlike modern versions, Wirth loops from right to left; I assume to fit the analogy of bubbles rising.
+
 O(n^2) \
 worst case: O(n^2) swaps \
 best case: O(1) swaps \
