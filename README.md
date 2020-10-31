@@ -6,7 +6,7 @@ Revisiting Niklaus Wirth's classic book. \
 The code examples are Pascal. Amazingly, the code compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
 
 In addition to the original Pascal, I'm re-working the algorithms in JavaScript, Python, and Scheme. \
-Learning Pascal is fun! I recommend it.
+Hacking Pascal is old-school. 
 
 ![cover](wirth1.jpg?raw=true)
 
@@ -22,7 +22,7 @@ The least numbers occur if the items are originally in order; the worst case occ
 O(n^2) 
 
 *Divergence from Wirth*:
-Because there are two termination conditions, Wirth uses the "sentinel technique" of setting the current item in the iteration as a terminating value at index zero. This increases the index range by one. This seems unnecessarily complicated than simply checking both termination conditions, and introduces a duplicate value in your data, which, itself could lead to subsequent errors.
+Because there are two termination conditions, Wirth uses the "sentinel technique" of setting the current item in the iteration as a terminating value at index zero. This increases the index range by one. This seems unnecessarily complicated than simply checking both termination conditions and introduces a duplicate value in the data, which, itself could lead to subsequent errors.
 
 The recursive versions increase memory consumption from O(1) to O(N) 
 
