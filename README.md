@@ -55,3 +55,13 @@ Unlike modern versions, Wirth loops from right to left; I assume to fit the anal
 O(n^2) \
 worst case: O(n^2) swaps \
 best case: O(1) swaps \
+
+
+### Heap Sort
+The method of sorting by straight selection is based on the repeated selection of the least key among *n* items. It can be improved by retaining from each scan more information than just the identification of the single least item. With *n*/2 comparisons it is possible to determine the smaller key of each pair of items, with another *n*/4 comparison the smaller of each pair can be selected, and so on; the second step now consists of descending down along the path marked by the least key and eliminating it. Each of the n selection steps requires only log n comparisons. Therefore, the selection process requires only on the order of *n* log n elementary operations in addition to the n steps required by the construction of the tree. This is a very significant improvement over the straight methods requiring *n*^2 steps.
+
+The heap is defined as a binary tree that can be constructed in situ as an array. Heapsort is an in-place algorithm, but it is not a stable sort.
+
+Although somewhat slower in practice on most machines than quicksort, it has the advantage of a more favorable worst-case O(n log n) runtime. Heapsort was invented by J. W. J. Williams in 1964. In the same year, R. W. Floyd published an improved version that could sort an array in-place. 
+
+O(n log n) 
