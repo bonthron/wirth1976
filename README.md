@@ -3,16 +3,16 @@
 
 Revisiting Niklaus Wirth's classic book. \
 45 years later- it remains highly relevant. \
-The code examples are Pascal. Amazingly, the code compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
+The code examples are Pascal. Amazingly, the code compiles (unchanged) using the 2020 version of [Free Pascal](https://www.freepascal.org)
 
-In addition to the original Pascal, I'm re-working the algorithms in **JavaScript, Python, and Scheme**. \
-Hacking Pascal is old-school. 
+In addition to the original Pascal, I'm re-working the algorithms in **JavaScript, Python**, and **Scheme**. \
+Hacking Pascal is old-school fun. 
 
 ![cover](wirth1.jpg?raw=true)
 
-*Divergence from Wirth*: Whereas Wirth indexes arrays from 1, in all cases, I've used zero-based indexing. Pascal differentiates between functions and procedures; Wirth prefers procedures, I've preferred functions. 
+*Divergence from Wirth*: Pascal differentiates between functions and procedures; Wirth uses procedures, I've preferred functions. Wirth indexes arrays from 1, in all cases, I've used zero-based indexing. 
 	
-Although the Pascal is very close to the book, for JavaScript and Python I've made small changes to make the code more idiomatic to those languages. Because Scheme avoids assignment and prefers recursion, this code is the most radically different and may different performance and complexity characteristics. 
+Although the Pascal is very close to the book, for JavaScript and Python I've made small changes to make the code more idiomatic. Because Scheme avoids assignment and prefers recursion, this code is the most different and the algorithms may have different performance and complexity characteristics. 
 
 - Insertion Sort
 - Straight Selection Sort
