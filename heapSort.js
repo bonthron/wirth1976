@@ -67,8 +67,8 @@ function sift(arr, L, R){
     Space complexity: O(1) 
     This is not a stable sort.
 
-    This is a faithful translation from Wirth's original Pascal.
-    (I think better variable names and a couple helper functions would improve its readability.)
+    This is a faithful translation from Wirth's original Pascal. But..
+    I think some better variable names and some helper functions could improve its readability.
 */
 
 function heapSort(arr){
