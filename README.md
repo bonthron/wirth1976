@@ -5,10 +5,19 @@ Revisiting Niklaus Wirth's classic book. \
 45 years later- it remains highly relevant. \
 The code examples are Pascal. Amazingly, the code compiles (unchanged) using the 2020 version of Free Pascal. https://www.freepascal.org/
 
-In addition to the original Pascal, I'm re-working the algorithms in JavaScript, Python, and Scheme. \
+In addition to the original Pascal, I'm re-working the algorithms in **JavaScript, Python, and Scheme**. \
 Hacking Pascal is old-school. 
 
 ![cover](wirth1.jpg?raw=true)
+
+*Divergence from Wirth*: Whereas Wirth indexes arrays from 1, in all cases, I've used zero-based indexing. Pascal differentiates between functions and procedures; Wirth prefers procedures, I've preferred functions. 
+	
+Although the Pascal is very close to the book, for JavaScript and Python I've made small changes to make the code more idiomatic to those languages. Because Scheme avoids assignment and prefers recursion, this code is the most radically different and may different performance and complexity characteristics. 
+
+- Insertion Sort
+- Straight Selection Sort
+- Straight Exchange Sort
+- Heapsort
 
 ### Insertion Sort
 This method is widely used by card players. It is a stable sort, it leaves the order of items with equal keys unchanged.
