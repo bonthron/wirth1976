@@ -1,5 +1,19 @@
 
 /*
+Straight Selection Sort
+
+Straight Selection is in some sense the opposite of straight insertion: Straight insertion considers in each step only the one next item of the source sequence and all items of the destination array to find the insertion point; straight selection considers all items of the source array to find the one withe least key and to deposit it as the one next item of the destination sequence. 
+
+This is not a stable sort. 
+O(n^2) 
+worst case: O(n^2) swaps 
+best case: O(1) swaps 
+
+We may conclude in general the algorithm of straight selection is to be preferred over straight insertion.
+*/
+
+
+/*
   The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates
   in their book Statistical tables for biological, agricultural and medical research.
   The modern version of the Fisher-Yates shuffle, designed for computer use, was introduced by Richard Durstenfeld

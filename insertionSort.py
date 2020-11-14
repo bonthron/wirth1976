@@ -2,6 +2,30 @@
 from random import randrange
 
 
+# Insertion Sort
+
+# This method is widely used by card players. It is a stable sort, it leaves the order of items
+# with equal keys unchanged.
+
+# The number of key comparisons in the i-th sift is at most i - 1, at least 1,
+# and -assuming that all permutations of the n keys are equally probable- 1/2 in average. 
+# C_min = n - 1 
+# C_max = 1/2(n^2 + n) -1 
+
+# The least numbers occur if the items are originally in order; the worst case occurs if the
+# items are originally in reverse order.
+
+# O(n^2) 
+
+# Divergence from Wirth:
+# Because there are two termination conditions, Wirth uses the "sentinel technique" of setting
+# the current item in the iteration as a terminating value at index zero. This increases the index
+# range by one. This seems unnecessarily complicated than simply checking both termination conditions
+# and introduces a duplicate value in the data, which, itself could lead to subsequent errors.
+
+
+
+
 # --------------------------------------------------------------------------- fisher_yates_shuffle
 #
 # The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates
