@@ -68,7 +68,6 @@
             (make-rec 8 "I")
             (make-rec 9 "J")
             ))
-)
 
 
 (define (rec-less-than a b) (< (rec-key a) (rec-key b)))
