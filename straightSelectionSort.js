@@ -1,7 +1,9 @@
 
 /*
-  The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates in their book Statistical tables for biological, agricultural and medical research.
-  The modern version of the Fisher-Yates shuffle, designed for computer use, was introduced by Richard Durstenfeld in 1964 and popularized by Donald E. Knuth in The Art of Computer Programming.
+  The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates
+  in their book Statistical tables for biological, agricultural and medical research.
+  The modern version of the Fisher-Yates shuffle, designed for computer use, was introduced by Richard Durstenfeld
+  in 1964 and popularized by Donald E. Knuth in The Art of Computer Programming.
   O(n)
 */
 function fisherYatesShuffle(arr){
@@ -30,9 +32,6 @@ var a = [
     {key:9, value:"J"}
 ];
 
-var shuffled = fisherYatesShuffle(a);
-console.log(shuffled);
-
 /*
   not a stable sort
   O(n2)
@@ -60,7 +59,10 @@ function selectionSort(arr){
     return a;
 }
 
-var sorted = selectionSort(shuffled.slice(0));
 
+var shuffled = fisherYatesShuffle(a);
+console.log(shuffled);
+
+var sorted = selectionSort(shuffled.slice(0));
 console.log(sorted);
 

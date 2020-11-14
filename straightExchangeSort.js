@@ -1,7 +1,9 @@
 
 /*
-  The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates in their book Statistical tables for biological, agricultural and medical research.
-  The modern version of the Fisher-Yates shuffle, designed for computer use, was introduced by Richard Durstenfeld in 1964 and popularized by Donald E. Knuth in The Art of Computer Programming.
+  The Fisher-Yates shuffle, in its original form, was described in 1938 by Ronald Fisher and Frank Yates
+  in their book Statistical tables for biological, agricultural and medical research.
+  The modern version of the Fisher-Yates shuffle, designed for computer use, was introduced by Richard Durstenfeld
+  in 1964 and popularized by Donald E. Knuth in The Art of Computer Programming.
   O(n)
 */
 function fisherYatesShuffle(arr){
@@ -17,21 +19,6 @@ function fisherYatesShuffle(arr){
     return arr;
 };
 
-var a = [
-    {key:0, value:"A"},
-    {key:1, value:"B"},
-    {key:2, value:"C"},
-    {key:3, value:"D"},
-    {key:4, value:"E"},
-    {key:5, value:"F"},
-    {key:6, value:"G"},
-    {key:7, value:"H"},
-    {key:8, value:"I"},
-    {key:9, value:"J"}
-];
-
-var shuffled = fisherYatesShuffle(a);
-console.log(shuffled);
 
 /*
   straight exchange, aka bubblesort
@@ -59,7 +46,22 @@ function exchangeSort(arr){
 }
 
 
-var sorted = exchangeSort(shuffled.slice(0));
+var a = [
+    {key:0, value:"A"},
+    {key:1, value:"B"},
+    {key:2, value:"C"},
+    {key:3, value:"D"},
+    {key:4, value:"E"},
+    {key:5, value:"F"},
+    {key:6, value:"G"},
+    {key:7, value:"H"},
+    {key:8, value:"I"},
+    {key:9, value:"J"}
+];
 
+var shuffled = fisherYatesShuffle(a);
+console.log(shuffled);
+
+var sorted = exchangeSort(shuffled.slice(0));
 console.log(sorted);
 
